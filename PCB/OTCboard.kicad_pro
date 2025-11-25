@@ -630,6 +630,23 @@
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "f410b0a0-725c-464e-80be-c0074224226d",
+      "Root"
+    ],
+    [
+      "14486a70-ff57-4274-bd42-24831c317bcd",
+      "MCU"
+    ],
+    [
+      "df99ead2-0367-4be2-bcea-c49e7e835d17",
+      "USB"
+    ],
+    [
+      "5b7118b6-76c9-4b8c-a9de-b6eee187afea",
+      "Keys"
+    ]
+  ],
   "text_variables": {}
 }
