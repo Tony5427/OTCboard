@@ -5,6 +5,36 @@
 	(uuid "f410b0a0-725c-464e-80be-c0074224226d")
 	(paper "A4")
 	(lib_symbols)
+	(wire
+		(pts
+			(xy 137.795 30.48) (xy 150.495 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24659cda-cb7c-439c-9cf1-f928a10fd37a")
+	)
+	(wire
+		(pts
+			(xy 137.795 24.13) (xy 150.495 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "263b8a6c-2eab-4b9f-8c4e-1dc5655212cb")
+	)
+	(wire
+		(pts
+			(xy 137.795 27.305) (xy 150.495 27.305)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eca4ea09-5785-4664-86d7-430ba751ec00")
+	)
 	(sheet
 		(at 91.44 19.05)
 		(size 46.355 50.165)
@@ -39,6 +69,36 @@
 				(justify left top)
 			)
 		)
+		(pin "KEY1" input
+			(at 137.795 24.13 0)
+			(uuid "a6c85508-bbde-4fa9-be14-cffecd7bcd49")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "KEY2" input
+			(at 137.795 27.305 0)
+			(uuid "0279db82-275d-4677-a941-3b8c4031ea74")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "KEY3" input
+			(at 137.795 30.48 0)
+			(uuid "77f1b295-3517-40a5-96de-f01d96e2e0f3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "OTCboard"
 				(path "/f410b0a0-725c-464e-80be-c0074224226d"
@@ -48,7 +108,7 @@
 		)
 	)
 	(sheet
-		(at 92.71 81.28)
+		(at 150.495 18.415)
 		(size 36.83 51.435)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -64,7 +124,7 @@
 		)
 		(uuid "5b7118b6-76c9-4b8c-a9de-b6eee187afea")
 		(property "Sheetname" "Keys"
-			(at 92.71 80.5684 0)
+			(at 150.495 17.7034 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -73,12 +133,42 @@
 			)
 		)
 		(property "Sheetfile" "Keys.kicad_sch"
-			(at 92.71 133.2996 0)
+			(at 150.495 70.4346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "KEY1" output
+			(at 150.495 24.13 180)
+			(uuid "f383ccc2-402e-4c8d-be8b-0796a71197c8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "KEY2" output
+			(at 150.495 27.305 180)
+			(uuid "c72f5c10-84a2-4b46-8512-84fe8bac4cb4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "KEY3" output
+			(at 150.495 30.48 180)
+			(uuid "9fad1bcd-a4f4-4dc9-80bd-26b42877b18f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

@@ -1346,6 +1346,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+3.3V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "Max Current Draw = 26mA (170MHz, 55C) -> ~30mA"
 		(exclude_from_sim no)
@@ -1356,6 +1481,97 @@
 			)
 		)
 		(uuid "99b00e5d-c74a-4781-9aa0-421218b784c8")
+	)
+	(junction
+		(at 102.87 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "436818ef-624b-4571-be77-e5d94c66ad06")
+	)
+	(junction
+		(at 100.33 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c3cf80e-92ed-4459-9447-a384f4cf27d1")
+	)
+	(junction
+		(at 105.41 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8d0ac440-7a78-4e48-a486-66817e2ca5fe")
+	)
+	(wire
+		(pts
+			(xy 100.33 30.48) (xy 102.87 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e5bde50-6e9a-4b2e-be6f-8e4c67ff608f")
+	)
+	(wire
+		(pts
+			(xy 102.87 30.48) (xy 105.41 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f47d372-55db-4479-84f6-7f238fe44af1")
+	)
+	(wire
+		(pts
+			(xy 97.79 30.48) (xy 100.33 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70bc5930-bb37-40d5-960f-f966f10f6bbd")
+	)
+	(wire
+		(pts
+			(xy 105.41 30.48) (xy 107.95 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80b2a807-f70c-429a-957b-87fefb8bb1f7")
+	)
+	(hierarchical_label "KEY2"
+		(shape input)
+		(at 139.065 69.215 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0f81574b-f805-4a28-9d75-7cb35459077b")
+	)
+	(hierarchical_label "KEY1"
+		(shape input)
+		(at 138.43 65.405 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "468a1344-f6cd-40ed-8d56-ebb39f8d6c20")
+	)
+	(hierarchical_label "KEY3"
+		(shape input)
+		(at 137.795 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5c856a00-7dfc-4243-89a0-816b4bead8be")
 	)
 	(symbol
 		(lib_id "MCU_ST_STM32G4:STM32G491CETx")
@@ -1561,6 +1777,72 @@
 			(project "OTCboard"
 				(path "/f410b0a0-725c-464e-80be-c0074224226d/14486a70-ff57-4274-bd42-24831c317bcd"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 102.87 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dcf61004-f547-4a0e-b003-36ea5f3cf5d1")
+		(property "Reference" "#PWR011"
+			(at 102.87 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 102.87 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 102.87 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "017650e9-0375-441f-bb30-7f54a1f7f7f9")
+		)
+		(instances
+			(project ""
+				(path "/f410b0a0-725c-464e-80be-c0074224226d/14486a70-ff57-4274-bd42-24831c317bcd"
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)

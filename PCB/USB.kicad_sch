@@ -1347,12 +1347,23 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:LT1963AxST-3.3"
+		(symbol "Regulator_Linear:TLV1117-33"
+			(pin_names
+				(offset 0.254)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -7.62 6.35 0)
+				(at -3.81 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TLV1117-33"
+				(at 0 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1360,34 +1371,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "LT1963AxST-3.3"
-				(at -1.27 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-				(at 0 -11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/1963aff.pdf"
-				(at 0 -13.97 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "3.3V, 1.5A, Low Noise, Fast Transient Response LDO Regulator, SOT-223"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1396,7 +1380,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "LDO voltage regulator fixed"
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv1117.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1405,7 +1389,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT*223*"
+			(property "Description" "800mA Low-Dropout Linear Regulator, 3.3V fixed output, TO-220/TO-252/TO-263/SOT-223"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1414,10 +1398,28 @@
 					(hide yes)
 				)
 			)
-			(symbol "LT1963AxST-3.3_0_1"
+			(property "ki_keywords" "linear regulator ldo fixed positive"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?223* TO?263* TO?252* TO?220*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TLV1117-33_0_1"
 				(rectangle
-					(start -7.62 5.08)
-					(end 7.62 -5.08)
+					(start -5.08 -5.08)
+					(end 5.08 1.905)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1427,18 +1429,18 @@
 					)
 				)
 			)
-			(symbol "LT1963AxST-3.3_1_1"
+			(symbol "TLV1117-33_1_1"
 				(pin power_in line
-					(at -10.16 2.54 0)
+					(at -7.62 0 0)
 					(length 2.54)
-					(name "IN"
+					(name "VI"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1456,7 +1458,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1465,16 +1467,16 @@
 					)
 				)
 				(pin power_out line
-					(at 10.16 2.54 180)
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "OUT"
+					(name "VO"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2235,7 +2237,7 @@
 		)
 		(uuid "5504b481-0cca-4d27-a0c4-79600bd1618d")
 	)
-	(text "5V to 3.3V LDO for ESP power from USB\n1A max, bypass cap values via data sheet "
+	(text "5V to 3.3V LDO\n1A max, bypass caps from data sheet"
 		(exclude_from_sim no)
 		(at 189.738 51.181 0)
 		(effects
@@ -2403,7 +2405,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 40.005) (xy 189.23 41.275)
+			(xy 189.23 37.465) (xy 189.23 41.275)
 		)
 		(stroke
 			(width 0)
@@ -2493,16 +2495,6 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 29.845) (xy 203.2 29.845)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94516995-23d3-4526-ae6e-fa093bc4fbfc")
-	)
-	(wire
-		(pts
 			(xy 50.8 33.02) (xy 57.15 33.02)
 		)
 		(stroke
@@ -2510,6 +2502,16 @@
 			(type default)
 		)
 		(uuid "9f4d390d-07bf-4e5a-a392-209e54ef1124")
+	)
+	(wire
+		(pts
+			(xy 196.85 29.845) (xy 203.2 29.845)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a61be885-bacf-4b7f-941b-165de283b916")
 	)
 	(wire
 		(pts
@@ -2523,7 +2525,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 29.845) (xy 179.07 29.845)
+			(xy 173.99 29.845) (xy 181.61 29.845)
 		)
 		(stroke
 			(width 0)
@@ -3297,7 +3299,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "5.1k"
 			(at 101.6 50.7999 0)
 			(effects
 				(font
@@ -3614,95 +3616,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:LT1963AxST-3.3")
-		(at 189.23 32.385 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "69c982b6-fcc6-491a-8077-57e0dcf13d07")
-		(property "Reference" "U8"
-			(at 189.23 22.225 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LT1963AEST-3.3#TRPBF"
-			(at 189.23 24.765 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 189.23 43.815 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/1963aff.pdf"
-			(at 189.23 46.355 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "3.3V, 1.5A, Low Noise, Fast Transient Response LDO Regulator, SOT-223"
-			(at 189.23 32.385 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "P/N" "LT1963AEST-3.3#TRPBF"
-			(at 189.23 32.385 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "584-1963AEST-3.3TPF"
-			(at 189.23 32.385 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "97c83b3f-ef1b-4799-aaf3-00cbd9a3a8fd")
-		)
-		(pin "3"
-			(uuid "3274d88c-3006-498d-95d5-27e9ff348413")
-		)
-		(pin "1"
-			(uuid "9c2ac232-edfe-4367-8b8c-e87e51c9f8ac")
-		)
-		(instances
-			(project "OTCboard"
-				(path "/f410b0a0-725c-464e-80be-c0074224226d/df99ead2-0367-4be2-bcea-c49e7e835d17"
-					(reference "U8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 99.695 54.61 0)
 		(unit 1)
@@ -3763,6 +3676,77 @@
 			(project "OTCboard"
 				(path "/f410b0a0-725c-464e-80be-c0074224226d/df99ead2-0367-4be2-bcea-c49e7e835d17"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:TLV1117-33")
+		(at 189.23 29.845 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "72ff394f-b3f9-4a70-a5a4-08f11a1f41a1")
+		(property "Reference" "U?"
+			(at 189.23 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TLV1117-33"
+			(at 189.23 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 29.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv1117.pdf"
+			(at 189.23 29.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "800mA Low-Dropout Linear Regulator, 3.3V fixed output, TO-220/TO-252/TO-263/SOT-223"
+			(at 189.23 29.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "a1632395-60dc-4404-a408-f8b0b4e0eb37")
+		)
+		(pin "1"
+			(uuid "a159ade9-546b-4496-a727-fd775a95a873")
+		)
+		(pin "2"
+			(uuid "602a974f-1e7a-4dee-907a-4060fc053893")
+		)
+		(instances
+			(project ""
+				(path "/f410b0a0-725c-464e-80be-c0074224226d/df99ead2-0367-4be2-bcea-c49e7e835d17"
+					(reference "U?")
 					(unit 1)
 				)
 			)
@@ -3875,7 +3859,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "5.1k"
 			(at 110.49 50.7999 0)
 			(effects
 				(font
@@ -4230,7 +4214,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "1u"
 			(at 206.375 36.195 0)
 			(effects
 				(font
@@ -4611,7 +4595,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "1u"
 			(at 177.165 36.1949 0)
 			(effects
 				(font
