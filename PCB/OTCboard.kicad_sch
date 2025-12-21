@@ -7,6 +7,26 @@
 	(lib_symbols)
 	(wire
 		(pts
+			(xy 113.03 69.215) (xy 113.03 84.455)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ae3ba91-ec8e-4615-a671-2e2eac17d936")
+	)
+	(wire
+		(pts
+			(xy 69.215 34.29) (xy 91.44 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19e91e7e-3b11-4a9d-a98a-34395393fe9c")
+	)
+	(wire
+		(pts
 			(xy 137.795 30.48) (xy 150.495 30.48)
 		)
 		(stroke
@@ -27,6 +47,66 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 69.215) (xy 115.57 84.455)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "476aa106-cac0-478b-a144-e7f4f7e99540")
+	)
+	(wire
+		(pts
+			(xy 69.215 29.21) (xy 91.44 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47e169c4-f38b-4e64-a92d-b0f1bf14db86")
+	)
+	(wire
+		(pts
+			(xy 110.49 69.215) (xy 110.49 84.455)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5322684e-558b-41ac-9148-34ad8e57dcc3")
+	)
+	(wire
+		(pts
+			(xy 102.87 69.215) (xy 102.87 84.455)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "869d991e-004a-47eb-b65e-ab06904c9596")
+	)
+	(wire
+		(pts
+			(xy 107.95 69.215) (xy 107.95 84.455)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e47a9aa-d93e-489f-96c1-a6d62ccfae5d")
+	)
+	(wire
+		(pts
+			(xy 105.41 69.215) (xy 105.41 84.455)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea1a8510-f0ea-409e-9206-a5da5cf132cb")
+	)
+	(wire
+		(pts
 			(xy 137.795 27.305) (xy 150.495 27.305)
 		)
 		(stroke
@@ -34,6 +114,16 @@
 			(type default)
 		)
 		(uuid "eca4ea09-5785-4664-86d7-430ba751ec00")
+	)
+	(wire
+		(pts
+			(xy 98.425 69.215) (xy 98.425 84.455)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fce18f76-f4b2-4e5b-8f4d-6939cd75bd51")
 	)
 	(sheet
 		(at 91.44 19.05)
@@ -97,6 +187,96 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "AddressableLEDs" output
+			(at 98.425 69.215 270)
+			(uuid "fa55b24e-4870-44ff-b3d9-7e9ef2f19f87")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BL" output
+			(at 102.87 69.215 270)
+			(uuid "c4c2e236-ef23-4760-8da3-3fbcd16df21c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CS" output
+			(at 105.41 69.215 270)
+			(uuid "c64b0d49-ac82-4cd4-b0e9-1336dd9fbab0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DC" output
+			(at 107.95 69.215 270)
+			(uuid "86302a2e-cec9-46be-8a63-1dd98ff37e9a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MOSI" output
+			(at 110.49 69.215 270)
+			(uuid "3479b077-3bde-4941-b05a-31e9bf76ba22")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RES" output
+			(at 113.03 69.215 270)
+			(uuid "71f4e175-8fc5-4e4b-8216-848eb8b7480e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCK" output
+			(at 115.57 69.215 270)
+			(uuid "8aea01c0-09f7-47fb-8db5-bc7090db673a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB_D+" input
+			(at 91.44 29.21 180)
+			(uuid "b299b410-dd62-4171-8e0c-6aee29e8b855")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB_D-" input
+			(at 91.44 34.29 180)
+			(uuid "2c3557f9-2004-4aa7-99c2-3e5ee8879297")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -175,6 +355,118 @@
 			(project "OTCboard"
 				(path "/f410b0a0-725c-464e-80be-c0074224226d"
 					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 91.44 84.455)
+		(size 46.355 43.815)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7f2ee157-0544-4b4f-a393-7ad097fd1635")
+		(property "Sheetname" "LEDs"
+			(at 91.44 83.7434 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LEDs.kicad_sch"
+			(at 91.44 128.8546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "AddressableLEDs" input
+			(at 98.425 84.455 90)
+			(uuid "f47dc4f2-163d-479a-911e-80b820d5df5f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BL" input
+			(at 102.87 84.455 90)
+			(uuid "24325729-0a83-40ca-a092-50e8c584331f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CS" input
+			(at 105.41 84.455 90)
+			(uuid "079c4ccc-9cc3-4bc9-af90-5523c03bcdce")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DC" input
+			(at 107.95 84.455 90)
+			(uuid "448939c6-9028-4ea6-b244-b803c7b65626")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MOSI" input
+			(at 110.49 84.455 90)
+			(uuid "4f2097c7-240c-4e59-879f-c239be999411")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RES" input
+			(at 113.03 84.455 90)
+			(uuid "3f1afe34-4a9d-449d-b0c9-567f972672bf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SCK" input
+			(at 115.57 84.455 90)
+			(uuid "c73e937a-2ec8-4b6c-befb-fd7161284466")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "OTCboard"
+				(path "/f410b0a0-725c-464e-80be-c0074224226d"
+					(page "5")
 				)
 			)
 		)
