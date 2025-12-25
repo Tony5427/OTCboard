@@ -5,6 +5,113 @@
 	(uuid "f67b5ad3-cbc9-44d4-8958-075cad9cb3b0")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Sensor_Magnetic:DRV5055A3xDBZxQ1"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -366,9 +473,51 @@
 			(embedded_fonts no)
 		)
 	)
+	(junction
+		(at 48.26 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "290e1b51-42ef-43ed-a0d1-68a7be8ec42d")
+	)
+	(junction
+		(at 86.36 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60c41da1-bcbb-4d82-93ec-3ea5aad0b752")
+	)
+	(wire
+		(pts
+			(xy 50.8 40.64) (xy 48.26 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dea96bf-b764-4368-a421-b51878a30dcd")
+	)
+	(wire
+		(pts
+			(xy 88.9 40.64) (xy 86.36 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3a69133-7323-4bf8-99e3-873a707ad4b8")
+	)
+	(wire
+		(pts
+			(xy 127 40.64) (xy 124.46 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc62049e-d609-4abe-95b7-bd71aa68bc75")
+	)
 	(hierarchical_label "KEY1"
 		(shape output)
-		(at 47.625 40.64 0)
+		(at 50.8 40.64 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -379,7 +528,7 @@
 	)
 	(hierarchical_label "KEY3"
 		(shape output)
-		(at 125.095 40.64 0)
+		(at 127 40.64 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -390,7 +539,7 @@
 	)
 	(hierarchical_label "KEY2"
 		(shape output)
-		(at 85.725 40.64 0)
+		(at 88.9 40.64 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -401,7 +550,7 @@
 	)
 	(symbol
 		(lib_id "Sensor_Magnetic:DRV5055A3xDBZxQ1")
-		(at 117.475 40.64 0)
+		(at 116.84 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -410,7 +559,7 @@
 		(fields_autoplaced yes)
 		(uuid "0bae1800-a111-4b72-9b4a-12170dde0636")
 		(property "Reference" "U5"
-			(at 110.49 39.3699 0)
+			(at 109.855 39.3699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -419,7 +568,7 @@
 			)
 		)
 		(property "Value" "DRV5055A3xDBZxQ1"
-			(at 110.49 41.9099 0)
+			(at 109.855 41.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -428,7 +577,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 117.475 40.64 0)
+			(at 116.84 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -437,7 +586,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/drv5055-q1.pdf"
-			(at 117.475 40.64 0)
+			(at 116.84 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -446,7 +595,7 @@
 			)
 		)
 		(property "Description" "25 mV/mT,±85-mT, 20-kHz, 3.3/5V, SOT-23"
-			(at 117.475 40.64 0)
+			(at 116.84 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -474,7 +623,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 37.465 50.8 0)
+		(at 38.1 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -482,8 +631,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0dcad3b8-4d7b-43d7-8a66-045e9b21f09c")
-		(property "Reference" "#PWR024"
-			(at 37.465 57.15 0)
+		(property "Reference" "#PWR035"
+			(at 38.1 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -492,7 +641,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 37.465 55.245 0)
+			(at 38.1 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -500,7 +649,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 37.465 50.8 0)
+			(at 38.1 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -509,7 +658,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 37.465 50.8 0)
+			(at 38.1 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -518,7 +667,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 37.465 50.8 0)
+			(at 38.1 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -532,7 +681,74 @@
 		(instances
 			(project ""
 				(path "/f410b0a0-725c-464e-80be-c0074224226d/5b7118b6-76c9-4b8c-a9de-b6eee187afea"
-					(reference "#PWR024")
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 127 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "13a508b7-5815-4611-8b68-2291293bc0a5")
+		(property "Reference" "TP3"
+			(at 129.54 36.0679 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "KEY3"
+			(at 129.54 38.6079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
+			(at 132.08 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 132.08 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 127 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ea65019e-0f19-4b8c-ab70-5adb684781f0")
+		)
+		(instances
+			(project "OTCboard"
+				(path "/f410b0a0-725c-464e-80be-c0074224226d/5b7118b6-76c9-4b8c-a9de-b6eee187afea"
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -540,7 +756,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 37.465 30.48 0)
+		(at 38.1 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -548,8 +764,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "29182456-940f-4adc-9101-6ce9c4e9463c")
-		(property "Reference" "#PWR023"
-			(at 37.465 34.29 0)
+		(property "Reference" "#PWR034"
+			(at 38.1 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -558,7 +774,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 37.465 25.4 0)
+			(at 38.1 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -566,7 +782,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 37.465 30.48 0)
+			(at 38.1 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -575,7 +791,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 37.465 30.48 0)
+			(at 38.1 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -584,7 +800,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 37.465 30.48 0)
+			(at 38.1 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -598,7 +814,7 @@
 		(instances
 			(project ""
 				(path "/f410b0a0-725c-464e-80be-c0074224226d/5b7118b6-76c9-4b8c-a9de-b6eee187afea"
-					(reference "#PWR023")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -606,7 +822,7 @@
 	)
 	(symbol
 		(lib_id "Sensor_Magnetic:DRV5055A3xDBZxQ1")
-		(at 78.105 40.64 0)
+		(at 78.74 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -615,7 +831,7 @@
 		(fields_autoplaced yes)
 		(uuid "2b3c7425-1368-4255-9f56-6c8da9824630")
 		(property "Reference" "U4"
-			(at 71.12 39.3699 0)
+			(at 71.755 39.3699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -624,7 +840,7 @@
 			)
 		)
 		(property "Value" "DRV5055A3xDBZxQ1"
-			(at 71.12 41.9099 0)
+			(at 71.755 41.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -633,7 +849,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 78.105 40.64 0)
+			(at 78.74 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -642,7 +858,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/drv5055-q1.pdf"
-			(at 78.105 40.64 0)
+			(at 78.74 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -651,7 +867,7 @@
 			)
 		)
 		(property "Description" "25 mV/mT,±85-mT, 20-kHz, 3.3/5V, SOT-23"
-			(at 78.105 40.64 0)
+			(at 78.74 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -679,7 +895,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 75.565 50.8 0)
+		(at 76.2 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -687,8 +903,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d59fe42-ae6f-45a2-ae4a-8ded0f9d0d52")
-		(property "Reference" "#PWR026"
-			(at 75.565 57.15 0)
+		(property "Reference" "#PWR037"
+			(at 76.2 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -697,7 +913,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 75.565 55.245 0)
+			(at 76.2 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -705,7 +921,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 75.565 50.8 0)
+			(at 76.2 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -714,7 +930,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 75.565 50.8 0)
+			(at 76.2 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -723,7 +939,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 75.565 50.8 0)
+			(at 76.2 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -737,7 +953,7 @@
 		(instances
 			(project "OTCboard"
 				(path "/f410b0a0-725c-464e-80be-c0074224226d/5b7118b6-76c9-4b8c-a9de-b6eee187afea"
-					(reference "#PWR026")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -745,7 +961,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 75.565 30.48 0)
+		(at 76.2 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -753,8 +969,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "66d94ce7-bc38-4630-94cc-928fa5e52f3b")
-		(property "Reference" "#PWR025"
-			(at 75.565 34.29 0)
+		(property "Reference" "#PWR036"
+			(at 76.2 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -763,7 +979,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 75.565 25.4 0)
+			(at 76.2 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -771,7 +987,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 75.565 30.48 0)
+			(at 76.2 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -780,7 +996,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 75.565 30.48 0)
+			(at 76.2 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -789,7 +1005,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 75.565 30.48 0)
+			(at 76.2 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -803,7 +1019,7 @@
 		(instances
 			(project "OTCboard"
 				(path "/f410b0a0-725c-464e-80be-c0074224226d/5b7118b6-76c9-4b8c-a9de-b6eee187afea"
-					(reference "#PWR025")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -811,7 +1027,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 114.935 50.8 0)
+		(at 114.3 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -819,8 +1035,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b63c3836-488a-440b-a75d-db39f57f3095")
-		(property "Reference" "#PWR028"
-			(at 114.935 57.15 0)
+		(property "Reference" "#PWR039"
+			(at 114.3 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -829,7 +1045,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 114.935 55.245 0)
+			(at 114.3 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -837,7 +1053,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.935 50.8 0)
+			(at 114.3 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -846,7 +1062,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.935 50.8 0)
+			(at 114.3 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -855,7 +1071,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 114.935 50.8 0)
+			(at 114.3 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -869,7 +1085,74 @@
 		(instances
 			(project "OTCboard"
 				(path "/f410b0a0-725c-464e-80be-c0074224226d/5b7118b6-76c9-4b8c-a9de-b6eee187afea"
-					(reference "#PWR028")
+					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 48.26 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c0e52db7-d101-412b-a767-ffff0102d179")
+		(property "Reference" "TP1"
+			(at 50.8 36.0679 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "KEY1"
+			(at 50.8 38.6079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
+			(at 53.34 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.34 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 48.26 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d9da0acb-6838-4c67-8cdc-78e8c97c0252")
+		)
+		(instances
+			(project ""
+				(path "/f410b0a0-725c-464e-80be-c0074224226d/5b7118b6-76c9-4b8c-a9de-b6eee187afea"
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -877,7 +1160,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 114.935 30.48 0)
+		(at 114.3 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -885,8 +1168,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e981a187-83b9-4b85-bf59-4ae3a53ee0e1")
-		(property "Reference" "#PWR027"
-			(at 114.935 34.29 0)
+		(property "Reference" "#PWR038"
+			(at 114.3 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -895,7 +1178,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 114.935 25.4 0)
+			(at 114.3 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -903,7 +1186,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.935 30.48 0)
+			(at 114.3 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -912,7 +1195,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.935 30.48 0)
+			(at 114.3 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -921,7 +1204,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 114.935 30.48 0)
+			(at 114.3 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -935,7 +1218,7 @@
 		(instances
 			(project "OTCboard"
 				(path "/f410b0a0-725c-464e-80be-c0074224226d/5b7118b6-76c9-4b8c-a9de-b6eee187afea"
-					(reference "#PWR027")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -943,7 +1226,7 @@
 	)
 	(symbol
 		(lib_id "Sensor_Magnetic:DRV5055A3xDBZxQ1")
-		(at 40.005 40.64 0)
+		(at 40.64 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -952,7 +1235,7 @@
 		(fields_autoplaced yes)
 		(uuid "ebb67db2-98bd-4df1-bfac-3d9df1a0a233")
 		(property "Reference" "U3"
-			(at 33.02 39.3699 0)
+			(at 33.655 39.3699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -961,7 +1244,7 @@
 			)
 		)
 		(property "Value" "DRV5055A3xDBZxQ1"
-			(at 33.02 41.9099 0)
+			(at 33.655 41.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -970,7 +1253,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 40.005 40.64 0)
+			(at 40.64 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -979,7 +1262,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/drv5055-q1.pdf"
-			(at 40.005 40.64 0)
+			(at 40.64 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -988,7 +1271,7 @@
 			)
 		)
 		(property "Description" "25 mV/mT,±85-mT, 20-kHz, 3.3/5V, SOT-23"
-			(at 40.005 40.64 0)
+			(at 40.64 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1009,6 +1292,73 @@
 			(project ""
 				(path "/f410b0a0-725c-464e-80be-c0074224226d/5b7118b6-76c9-4b8c-a9de-b6eee187afea"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 86.36 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f436071f-1f5d-45f0-b7c5-840f21bbb55c")
+		(property "Reference" "TP2"
+			(at 88.9 36.0679 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "KEY2"
+			(at 88.9 38.6079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
+			(at 91.44 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 91.44 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 86.36 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b1741b04-9d4a-4fa9-adde-489b83655713")
+		)
+		(instances
+			(project "OTCboard"
+				(path "/f410b0a0-725c-464e-80be-c0074224226d/5b7118b6-76c9-4b8c-a9de-b6eee187afea"
+					(reference "TP2")
 					(unit 1)
 				)
 			)

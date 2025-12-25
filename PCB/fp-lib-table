@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "SK6812MINI-E")(type "KiCad")(uri "${KIPRJMOD}/OTCBoard LIbraries/SK6812MINI-E.pretty")(options "")(descr ""))
+  (lib (name "Magnetic Axis Switch")(type "KiCad")(uri "${KIPRJMOD}/OTCBoard LIbraries/Magnetic Axis Switch/Magnetic Axis Switch.pretty")(options "")(descr ""))
+)
