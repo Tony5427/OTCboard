@@ -1676,7 +1676,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:TLV1117-33"
+		(symbol "Regulator_Linear:MCP1826S"
 			(pin_names
 				(offset 0.254)
 			)
@@ -1691,7 +1691,7 @@
 					)
 				)
 			)
-			(property "Value" "TLV1117-33"
+			(property "Value" "MCP1826S"
 				(at 0 3.175 0)
 				(effects
 					(font
@@ -1701,6 +1701,24 @@
 				)
 			)
 			(property "Footprint" ""
+				(at -2.54 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/22057B.pdf"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1000mA, Low-Voltage, Low Quiescent Current LDO Regulator, SOT-223, TO-220, TO-263"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1709,7 +1727,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv1117.pdf"
+			(property "ki_keywords" "regulator linear ldo"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1718,7 +1736,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "800mA Low-Dropout Linear Regulator, 3.3V fixed output, TO-220/TO-252/TO-263/SOT-223"
+			(property "ki_fp_filters" "SOT?223*TabPin2* TO?220* TO?263*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1727,28 +1745,10 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "linear regulator ldo fixed positive"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?223* TO?263* TO?252* TO?220*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TLV1117-33_0_1"
+			(symbol "MCP1826S_0_1"
 				(rectangle
-					(start -5.08 -5.08)
-					(end 5.08 1.905)
+					(start -5.08 1.905)
+					(end 5.08 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1758,7 +1758,7 @@
 					)
 				)
 			)
-			(symbol "TLV1117-33_1_1"
+			(symbol "MCP1826S_1_1"
 				(pin power_in line
 					(at -7.62 0 0)
 					(length 2.54)
@@ -1769,7 +1769,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1787,7 +1787,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1805,7 +1805,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2469,16 +2469,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 43.18) (xy 190.5 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "33598ec0-fc89-4e32-a92e-a9dd8c74aa7d")
-	)
-	(wire
-		(pts
 			(xy 109.22 38.1) (xy 109.22 45.72)
 		)
 		(stroke
@@ -3112,7 +3102,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "450"
+		(property "Value" "1k"
 			(at 256.54 38.0999 0)
 			(effects
 				(font
@@ -3200,7 +3190,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "120"
+		(property "Value" "1k"
 			(at 269.24 38.0999 0)
 			(effects
 				(font
@@ -3671,77 +3661,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:TLV1117-33")
-		(at 190.5 30.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "72ff394f-b3f9-4a70-a5a4-08f11a1f41a1")
-		(property "Reference" "U2"
-			(at 190.5 23.495 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TLV1117-33"
-			(at 190.5 26.035 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223"
-			(at 190.5 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv1117.pdf"
-			(at 190.5 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "800mA Low-Dropout Linear Regulator, 3.3V fixed output, TO-220/TO-252/TO-263/SOT-223"
-			(at 190.5 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "a1632395-60dc-4404-a408-f8b0b4e0eb37")
-		)
-		(pin "1"
-			(uuid "a159ade9-546b-4496-a727-fd775a95a873")
-		)
-		(pin "2"
-			(uuid "602a974f-1e7a-4dee-907a-4060fc053893")
-		)
-		(instances
-			(project ""
-				(path "/f410b0a0-725c-464e-80be-c0074224226d/df99ead2-0367-4be2-bcea-c49e7e835d17"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 266.7 44.45 90)
 		(unit 1)
@@ -4120,6 +4039,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:MCP1826S")
+		(at 190.5 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93a7cb4f-feb1-4971-b09d-f2bf87a19d1e")
+		(property "Reference" "U2"
+			(at 190.5 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP1826S"
+			(at 190.5 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 187.96 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/22057B.pdf"
+			(at 190.5 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1000mA, Low-Voltage, Low Quiescent Current LDO Regulator, SOT-223, TO-220, TO-263"
+			(at 190.5 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fb3b87a5-2901-4d89-886e-232b141e1c32")
+		)
+		(pin "1"
+			(uuid "709d5eb2-9826-404b-8994-452ca56c666c")
+		)
+		(pin "3"
+			(uuid "5beaeb3d-dd74-45b9-9d90-fad8b0cb614c")
+		)
+		(instances
+			(project ""
+				(path "/f410b0a0-725c-464e-80be-c0074224226d/df99ead2-0367-4be2-bcea-c49e7e835d17"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Power_Protection:SP0503BAHT")
 		(at 78.74 50.8 0)
 		(unit 1)
@@ -4198,7 +4188,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 190.5 43.18 0)
+		(at 190.5 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4207,7 +4197,7 @@
 		(fields_autoplaced yes)
 		(uuid "b2e80d83-46dd-4d75-b976-98ee5a83aec6")
 		(property "Reference" "#PWR028"
-			(at 190.5 49.53 0)
+			(at 190.5 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4216,7 +4206,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 190.5 48.26 0)
+			(at 190.5 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4224,7 +4214,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 43.18 0)
+			(at 190.5 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4233,7 +4223,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 43.18 0)
+			(at 190.5 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4242,7 +4232,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 190.5 43.18 0)
+			(at 190.5 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4271,7 +4261,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b464237b-4da5-42e7-ae01-03d68006faaa")
-		(property "Reference" "C13"
+		(property "Reference" "C12"
 			(at 206.375 33.02 0)
 			(effects
 				(font
@@ -4280,7 +4270,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "10u"
 			(at 206.375 35.56 0)
 			(effects
 				(font
@@ -4352,7 +4342,7 @@
 		(instances
 			(project "OTCboard"
 				(path "/f410b0a0-725c-464e-80be-c0074224226d/df99ead2-0367-4be2-bcea-c49e7e835d17"
-					(reference "C13")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -4566,7 +4556,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ceecfe45-e144-4f4b-bb9a-aa6ba9c23bae")
-		(property "Reference" "C11"
+		(property "Reference" "C10"
 			(at 123.19 48.2599 0)
 			(effects
 				(font
@@ -4638,7 +4628,7 @@
 		(instances
 			(project "OTCboard"
 				(path "/f410b0a0-725c-464e-80be-c0074224226d/df99ead2-0367-4be2-bcea-c49e7e835d17"
-					(reference "C11")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -4851,7 +4841,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f610a664-ae01-47c5-a17f-113fd2144563")
-		(property "Reference" "C12"
+		(property "Reference" "C11"
 			(at 178.435 33.02 0)
 			(effects
 				(font
@@ -4860,7 +4850,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "10u"
 			(at 178.435 35.5599 0)
 			(effects
 				(font
@@ -4923,7 +4913,7 @@
 		(instances
 			(project "OTCboard"
 				(path "/f410b0a0-725c-464e-80be-c0074224226d/df99ead2-0367-4be2-bcea-c49e7e835d17"
-					(reference "C12")
+					(reference "C11")
 					(unit 1)
 				)
 			)

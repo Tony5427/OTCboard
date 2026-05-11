@@ -7,7 +7,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 1.905 -0.635 0)
+			(at 0 5.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51,8 +51,8 @@
 		)
 		(symbol "Magnetic_Axis_Switch_1_1"
 			(rectangle
-				(start -2.54 -1.905)
-				(end 6.35 -10.795)
+				(start -4.445 3.81)
+				(end 4.445 -5.08)
 				(stroke
 					(width 0)
 					(type solid)
@@ -62,7 +62,7 @@
 				)
 			)
 			(text "Magnetic\nSwitch"
-				(at 1.905 -5.715 0)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)

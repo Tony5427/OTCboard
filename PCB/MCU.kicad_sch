@@ -3022,16 +3022,24 @@
 		(uuid "8f4823dd-ac5c-4a24-ad01-b65ddcfc8a01")
 	)
 	(no_connect
+		(at 121.92 43.18)
+		(uuid "90a5f567-017d-47b1-a9bc-20ba4b9387c5")
+	)
+	(no_connect
+		(at 121.92 50.8)
+		(uuid "9742bf01-479c-455f-9aec-a9ab01720387")
+	)
+	(no_connect
 		(at 86.36 58.42)
 		(uuid "a61686e3-d0fe-4dd9-b77c-56448494bf1b")
 	)
 	(no_connect
-		(at 121.92 73.66)
-		(uuid "b6f573d2-2a53-45ac-a0ca-6bdb1fa0a77e")
+		(at 121.92 48.26)
+		(uuid "a625a061-6150-4b0c-872d-2dec05a31f1d")
 	)
 	(no_connect
-		(at 86.36 96.52)
-		(uuid "b943d505-7aa3-4631-98d6-c45d87876c73")
+		(at 121.92 73.66)
+		(uuid "b6f573d2-2a53-45ac-a0ca-6bdb1fa0a77e")
 	)
 	(no_connect
 		(at 86.36 83.82)
@@ -3052,6 +3060,10 @@
 	(no_connect
 		(at 86.36 66.04)
 		(uuid "cd25718a-d25a-4923-8807-ae6e462c6eeb")
+	)
+	(no_connect
+		(at 121.92 55.88)
+		(uuid "d764571f-1ce5-4f88-8143-08cb758fd7ef")
 	)
 	(no_connect
 		(at 86.36 76.2)
@@ -3095,6 +3107,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 96.52) (xy 86.36 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "122deb22-95e3-4e64-9e0b-9940d634aed4")
+	)
+	(wire
+		(pts
 			(xy 102.87 111.76) (xy 104.14 111.76)
 		)
 		(stroke
@@ -3122,16 +3144,6 @@
 			(type default)
 		)
 		(uuid "1a2aa5d7-1353-4d6f-b006-724b42fb9d50")
-	)
-	(wire
-		(pts
-			(xy 121.92 55.88) (xy 129.54 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "271db79f-6cbc-48c9-8d2c-8f7eed57350c")
 	)
 	(wire
 		(pts
@@ -3212,16 +3224,6 @@
 			(type default)
 		)
 		(uuid "4e77a10a-a7cc-4d32-9fa6-faa334a05d1d")
-	)
-	(wire
-		(pts
-			(xy 121.92 43.18) (xy 129.54 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53f7ffb3-cbe4-48ec-8ba4-c25a5f3481a8")
 	)
 	(wire
 		(pts
@@ -3355,16 +3357,6 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 50.8) (xy 121.92 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c01e230-c5e4-434a-83b4-286602308b8f")
-	)
-	(wire
-		(pts
 			(xy 205.74 76.2) (xy 205.74 73.66)
 		)
 		(stroke
@@ -3422,16 +3414,6 @@
 			(type default)
 		)
 		(uuid "ace6fe37-863f-4e0c-af19-e5b2825d7e4d")
-	)
-	(wire
-		(pts
-			(xy 121.92 48.26) (xy 129.54 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b82fc578-e5b7-4026-8932-5a226053763a")
 	)
 	(wire
 		(pts
@@ -3654,29 +3636,7 @@
 		)
 		(uuid "06e9a886-8165-4100-a433-e9d1eb726670")
 	)
-	(hierarchical_label "KEY2"
-		(shape input)
-		(at 73.66 101.6 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0f81574b-f805-4a28-9d75-7cb35459077b")
-	)
-	(hierarchical_label "KEY1"
-		(shape input)
-		(at 73.66 99.06 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "468a1344-f6cd-40ed-8d56-ebb39f8d6c20")
-	)
-	(hierarchical_label "KEY3"
+	(hierarchical_label "KEY4"
 		(shape input)
 		(at 73.66 104.14 180)
 		(effects
@@ -3685,18 +3645,18 @@
 			)
 			(justify right)
 		)
-		(uuid "5c856a00-7dfc-4243-89a0-816b4bead8be")
+		(uuid "0cd41402-2092-4351-979d-a8a73d3857fe")
 	)
-	(hierarchical_label "DC"
-		(shape output)
-		(at 129.54 43.18 0)
+	(hierarchical_label "KEY2"
+		(shape input)
+		(at 73.66 99.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "7ad69ec5-5ffe-4ab8-bd7f-584ad219588e")
+		(uuid "50a754ca-5453-4698-b6e2-49edaa330950")
 	)
 	(hierarchical_label "USB_D+"
 		(shape input)
@@ -3709,27 +3669,27 @@
 		)
 		(uuid "9047873c-1dba-4d5d-abc3-99fc263c4670")
 	)
-	(hierarchical_label "MOSI"
-		(shape output)
-		(at 129.54 55.88 0)
+	(hierarchical_label "KEY3"
+		(shape input)
+		(at 73.66 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "ced710a1-1cb3-4e64-9e0a-1a3cea12b432")
+		(uuid "9396ca62-31b0-4e18-ac79-a934c3a72bfc")
 	)
-	(hierarchical_label "BL"
-		(shape output)
-		(at 129.54 48.26 0)
+	(hierarchical_label "KEY1"
+		(shape input)
+		(at 73.66 96.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "e65071f8-e97e-4d30-ba59-911317ca5ebc")
+		(uuid "e607611f-23d1-4664-bf2e-97165912bf76")
 	)
 	(hierarchical_label "AddressableLEDs"
 		(shape output)
@@ -3741,17 +3701,6 @@
 			(justify right)
 		)
 		(uuid "fd459cfe-2716-418b-9f79-3aa2388a0a54")
-	)
-	(hierarchical_label "SCK"
-		(shape output)
-		(at 129.54 50.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fdd64b07-6dcd-49cc-b87d-23a189410e70")
 	)
 	(symbol
 		(lib_id "power:+3.3V")
@@ -4075,7 +4024,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2ac22385-141c-4def-973b-6abd8d2a5cbd")
-		(property "Reference" "C9"
+		(property "Reference" "C8"
 			(at 242.57 142.2399 0)
 			(effects
 				(font
@@ -4179,7 +4128,7 @@
 		(instances
 			(project "OTCboard"
 				(path "/f410b0a0-725c-464e-80be-c0074224226d/14486a70-ff57-4274-bd42-24831c317bcd"
-					(reference "C9")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -4938,7 +4887,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7899c3e5-f5ad-47fa-8582-95ee58a8470d")
-		(property "Reference" "C8"
+		(property "Reference" "C7"
 			(at 229.87 142.2399 0)
 			(effects
 				(font
@@ -5042,7 +4991,7 @@
 		(instances
 			(project "OTCboard"
 				(path "/f410b0a0-725c-464e-80be-c0074224226d/14486a70-ff57-4274-bd42-24831c317bcd"
-					(reference "C8")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -5570,7 +5519,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9eebe095-f8db-4081-b0c8-ff3077e2f688")
-		(property "Reference" "C10"
+		(property "Reference" "C9"
 			(at 271.145 142.2399 0)
 			(effects
 				(font
@@ -5674,7 +5623,7 @@
 		(instances
 			(project "OTCboard"
 				(path "/f410b0a0-725c-464e-80be-c0074224226d/14486a70-ff57-4274-bd42-24831c317bcd"
-					(reference "C10")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -6316,7 +6265,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d4c1d7e3-cfd1-4a13-aac2-c9b4f6e019c7")
-		(property "Reference" "U9"
+		(property "Reference" "U1"
 			(at 108.8233 111.76 0)
 			(effects
 				(font
@@ -6509,7 +6458,7 @@
 		(instances
 			(project ""
 				(path "/f410b0a0-725c-464e-80be-c0074224226d/14486a70-ff57-4274-bd42-24831c317bcd"
-					(reference "U9")
+					(reference "U1")
 					(unit 1)
 				)
 			)
