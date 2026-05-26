@@ -5194,7 +5194,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "26p"
 			(at 69.85 58.4199 0)
 			(effects
 				(font
@@ -5657,7 +5657,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 176.2252 119.38 0)
 			(effects
 				(font
@@ -5825,7 +5825,7 @@
 		(fields_autoplaced yes)
 		(uuid "be190e53-115b-4b11-afd7-f46bf6d85c6c")
 		(property "Reference" "C1"
-			(at 59.055 48.2599 0)
+			(at 59.69 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5833,8 +5833,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
-			(at 59.055 50.7999 0)
+		(property "Value" "26p"
+			(at 59.69 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
