@@ -318,6 +318,17 @@
 		(uuid "ebd4d629-17eb-439f-9369-fa04daabb40f")
 	)
 	(fp_rect
+		(start -9.5 -9.5)
+		(end 9.5 9.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "Dwgs.User")
+		(uuid "ef0014cb-d92f-46ea-89ec-5094e1d8bcb1")
+	)
+	(fp_rect
 		(start -7.8 -7.8)
 		(end 7.8 7.8)
 		(stroke
@@ -361,17 +372,6 @@
 		(layer "Edge.Cuts")
 		(uuid "9424087d-cd61-4bbb-8731-76b0460f6a77")
 	)
-	(fp_rect
-		(start -9.5 -9.5)
-		(end 9.5 9.5)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(fill no)
-		(layer "F.CrtYd")
-		(uuid "ef0014cb-d92f-46ea-89ec-5094e1d8bcb1")
-	)
 	(fp_text user "${REFERENCE}"
 		(at 0.2 -10.8 0)
 		(unlocked yes)
@@ -393,6 +393,43 @@
 			(font
 				(size 1 1)
 				(thickness 0.15)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layers "F.Cu" "B.Cu" "In1.Cu" "In2.Cu" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu"
+			"In7.Cu" "In8.Cu" "In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu"
+			"In15.Cu" "In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu"
+			"In22.Cu" "In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu"
+			"In29.Cu" "In30.Cu"
+		)
+		(uuid "768a0886-e48c-4a64-9972-c03d73b652f5")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy -1.5 -1.45) (xy 1.5 -1.45) (xy 1.5 1.45) (xy -1.5 1.45)
 			)
 		)
 	)

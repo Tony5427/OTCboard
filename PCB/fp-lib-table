@@ -2,4 +2,6 @@
   (version 7)
   (lib (name "SK6812MINI-E")(type "KiCad")(uri "${KIPRJMOD}/OTCBoard LIbraries/SK6812MINI-E.pretty")(options "")(descr ""))
   (lib (name "Magnetic Axis Switch")(type "KiCad")(uri "${KIPRJMOD}/OTCBoard LIbraries/Magnetic Axis Switch/Magnetic Axis Switch.pretty")(options "")(descr ""))
+  (lib (name "Reset Button")(type "KiCad")(uri "${KIPRJMOD}/OTCBoard LIbraries/Button Switch/TL3365AF180G.pretty")(options "")(descr ""))
+  (lib (name "Slide Switch")(type "KiCad")(uri "${KIPRJMOD}/OTCBoard LIbraries/Slide Switch/Slide Switch.pretty")(options "")(descr ""))
 )

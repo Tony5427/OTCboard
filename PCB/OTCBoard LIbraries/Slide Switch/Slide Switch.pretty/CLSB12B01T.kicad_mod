@@ -1,0 +1,263 @@
+(footprint "CLSB12B01T"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "<b>CL-SB-12B-01T</b><br>")
+	(property "Reference" "REF**"
+		(at 0 4.73 0)
+		(layer "F.SilkS")
+		(uuid "963cec45-6cc3-42e2-a02f-1f99eeeb06b6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CLSB12B01T"
+		(at 0 -5.43 0)
+		(layer "F.Fab")
+		(uuid "1af02aa9-413d-4e8f-b13f-e4002ad309bb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3d09572a-cf7b-4972-94e5-3217bcfcfb1e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "43a9170d-9558-4f4a-89b0-4130f8d907fc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -4.25 -2.35)
+		(end -1 -2.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f0d190a4-6af7-4105-ba0b-d0e001936f9f")
+	)
+	(fp_line
+		(start -4.25 1.15)
+		(end -4.25 -2.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4920c54f-1d60-452a-ae84-6b731d12c23c")
+	)
+	(fp_line
+		(start -3.5 1.15)
+		(end -4.25 1.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "81330a4b-1814-4e45-a5df-8796caf8d016")
+	)
+	(fp_line
+		(start 1 -2.35)
+		(end 4.25 -2.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "417f1250-8ea4-4e35-857b-4b0c05bd3003")
+	)
+	(fp_line
+		(start 4.25 -2.35)
+		(end 4.25 1.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f5f2599b-41aa-46f6-a318-1b16e0e94236")
+	)
+	(fp_line
+		(start 4.25 1.15)
+		(end 3.5 1.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b0d38c11-c327-4f68-a9ad-3a9f64a1d3e9")
+	)
+	(fp_arc
+		(start -2.6 2.7)
+		(mid -2.5 2.6)
+		(end -2.4 2.7)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ec5ce837-74fd-4fdd-9193-0ae71a51873d")
+	)
+	(fp_arc
+		(start -2.4 2.7)
+		(mid -2.5 2.8)
+		(end -2.6 2.7)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a4f78315-fd15-480b-a52d-95d5c9d31c18")
+	)
+	(fp_line
+		(start -5.25 -4.5)
+		(end 5.25 -4.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8f590c42-7c2e-479c-8d63-f6d48da47698")
+	)
+	(fp_line
+		(start -5.25 3.8)
+		(end -5.25 -4.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "25388005-b704-4028-9812-a3254f71aac6")
+	)
+	(fp_line
+		(start -4.25 -2.35)
+		(end 4.25 -2.35)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2d0c3867-a1b0-4f7e-9ab9-3473acb83404")
+	)
+	(fp_line
+		(start -4.25 1.15)
+		(end -4.25 -2.35)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "841b2ecd-71b3-4dd1-9bcf-336171021b5b")
+	)
+	(fp_line
+		(start 4.25 -2.35)
+		(end 4.25 1.15)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e0ddec6c-adfe-4c3f-8c24-0fc686eada5f")
+	)
+	(fp_line
+		(start 4.25 1.15)
+		(end -4.25 1.15)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0cebfce7-031f-4ab0-9e9e-be5334d42396")
+	)
+	(fp_line
+		(start 5.25 -4.5)
+		(end 5.25 3.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e92de7ca-baae-4ccb-b973-184750dc20bc")
+	)
+	(fp_line
+		(start 5.25 3.8)
+		(end -5.25 3.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a747e66d-7e67-42e6-b430-0328c6c2c8ac")
+	)
+	(pad "" np_thru_hole circle
+		(at -3.4 -0.6)
+		(size 1.2 1.2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(uuid "7bd15d4c-619a-4e72-bf72-894f47013e8a")
+	)
+	(pad "" np_thru_hole circle
+		(at 3.4 -0.6)
+		(size 1.2 1.2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(uuid "8a5af796-d567-4a2f-8bd9-e8824ee2f9af")
+	)
+	(pad "1" smd rect
+		(at -2.5 1.6)
+		(size 1.2 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "b777901d-e08e-4d65-bbe7-046f4929fb64")
+	)
+	(pad "2" smd rect
+		(at 0 -2.8)
+		(size 1.2 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "f8e893a7-4728-4898-80e7-9e19a73d4d8b")
+	)
+	(pad "3" smd rect
+		(at 2.5 1.6)
+		(size 1.2 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "f6a4d5b8-128e-40d7-9569-27d244449e01")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/OTCBoard LIbraries/Slide Switch/Slide Switch.pretty/CL-SB-12B-01T.step"
+		(offset
+			(xyz 0 0.6 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)
