@@ -3038,6 +3038,10 @@
 		(uuid "4ddff821-2704-44b9-a308-899bacda32ec")
 	)
 	(no_connect
+		(at 86.36 93.98)
+		(uuid "54c578b7-48ed-4f67-9809-62628b35dab7")
+	)
+	(no_connect
 		(at 121.92 60.96)
 		(uuid "59dcd0b1-90c0-4604-bea1-d768de5444b2")
 	)
@@ -3076,10 +3080,6 @@
 	(no_connect
 		(at 86.36 58.42)
 		(uuid "a61686e3-d0fe-4dd9-b77c-56448494bf1b")
-	)
-	(no_connect
-		(at 121.92 48.26)
-		(uuid "a625a061-6150-4b0c-872d-2dec05a31f1d")
 	)
 	(no_connect
 		(at 121.92 73.66)
@@ -3318,6 +3318,16 @@
 			(type default)
 		)
 		(uuid "5642f53a-7b09-425b-bf9c-927f3d20b885")
+	)
+	(wire
+		(pts
+			(xy 121.92 48.26) (xy 129.54 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a62bec5-7fdb-47cb-9f9c-5f1f4e5571e9")
 	)
 	(wire
 		(pts
@@ -3561,16 +3571,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 93.98) (xy 86.36 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d99a9c9f-c19d-472d-ac07-dc1513e4da63")
-	)
-	(wire
-		(pts
 			(xy 175.26 86.36) (xy 185.42 86.36)
 		)
 		(stroke
@@ -3764,6 +3764,17 @@
 		)
 		(uuid "9396ca62-31b0-4e18-ac79-a934c3a72bfc")
 	)
+	(hierarchical_label "AddressableLEDs"
+		(shape output)
+		(at 129.54 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c9a1bb80-69e1-4bdf-add2-f7782c628f7e")
+	)
 	(hierarchical_label "KEY1"
 		(shape input)
 		(at 73.66 96.52 180)
@@ -3774,17 +3785,6 @@
 			(justify right)
 		)
 		(uuid "e607611f-23d1-4664-bf2e-97165912bf76")
-	)
-	(hierarchical_label "AddressableLEDs"
-		(shape output)
-		(at 73.66 93.98 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "fd459cfe-2716-418b-9f79-3aa2388a0a54")
 	)
 	(symbol
 		(lib_id "power:+3.3VA")
@@ -4540,6 +4540,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3VA")
+		(at 81.28 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "30b3eede-0272-477e-bd28-8b0b42e4607e")
+		(property "Reference" "#PWR03"
+			(at 81.28 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3VA"
+			(at 81.28 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
+			(at 81.28 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "44be20db-f84f-48fa-b998-02bb0b1fd89f")
+		)
+		(instances
+			(project "OTCboard"
+				(path "/f410b0a0-725c-464e-80be-c0074224226d/14486a70-ff57-4274-bd42-24831c317bcd"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 264.16 81.28 270)
 		(unit 1)
@@ -4650,7 +4716,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 255.27 147.32 0)
+		(at 262.89 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4658,7 +4724,7 @@
 		(dnp no)
 		(uuid "3b1bad70-00d5-4d95-9d7d-ccbf7ec67f19")
 		(property "Reference" "#PWR017"
-			(at 255.27 153.67 0)
+			(at 262.89 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4667,7 +4733,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 255.397 151.7142 0)
+			(at 263.017 151.7142 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4675,7 +4741,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 147.32 0)
+			(at 262.89 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4684,7 +4750,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 147.32 0)
+			(at 262.89 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4693,7 +4759,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 255.27 147.32 0)
+			(at 262.89 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5513,72 +5579,6 @@
 			(project ""
 				(path "/f410b0a0-725c-464e-80be-c0074224226d/14486a70-ff57-4274-bd42-24831c317bcd"
 					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3VA")
-		(at 81.28 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8ee0be3b-7ce0-4c12-93d0-ed2e8d32360b")
-		(property "Reference" "#PWR03"
-			(at 81.28 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3A"
-			(at 78.105 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 81.28 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
-			(at 81.28 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "79e47e77-e59c-4a7e-b757-be0aa4662659")
-		)
-		(instances
-			(project "OTCboard"
-				(path "/f410b0a0-725c-464e-80be-c0074224226d/14486a70-ff57-4274-bd42-24831c317bcd"
-					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -6617,124 +6617,6 @@
 			(project ""
 				(path "/f410b0a0-725c-464e-80be-c0074224226d/14486a70-ff57-4274-bd42-24831c317bcd"
 					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:FerriteBead")
-		(at 259.08 147.32 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d4f165e7-520c-4f6c-90e1-e598705751e4")
-		(property "Reference" "FB1"
-			(at 259.1308 139.7 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "FerriteBead"
-			(at 259.1308 142.24 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 259.08 145.542 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/2/87/eaton_mfbw1v2012_high_impedance_multilayer_ferrite-1916871.pdf"
-			(at 259.08 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Ferrite bead"
-			(at 259.08 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "704-MFBW1V2012-121-R"
-			(at 259.08 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "P/N" "MFBW1V2012-121-R"
-			(at 259.08 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Color" ""
-			(at 259.08 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "If" ""
-			(at 259.08 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mfg" ""
-			(at 259.08 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vf" ""
-			(at 259.08 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "eb6d5bad-6f5a-4973-b40a-0d36150cbfd7")
-		)
-		(pin "2"
-			(uuid "684befc2-8234-4462-843d-299abc8cd9d4")
-		)
-		(instances
-			(project "OTCboard"
-				(path "/f410b0a0-725c-464e-80be-c0074224226d/14486a70-ff57-4274-bd42-24831c317bcd"
-					(reference "FB1")
 					(unit 1)
 				)
 			)
